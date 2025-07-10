@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 import locale
 import io
 
-locale.setlocale(locale.LC_TIME, 'pt_BR.utf8')
 st.set_page_config(page_title="Dashboard de Custos", layout="wide")
 
 @st.cache_data

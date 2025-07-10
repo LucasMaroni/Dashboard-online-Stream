@@ -391,8 +391,8 @@ elif menu == "Reunião Manutenção Corporativa":
     st.title("🏗️ Relatório | Reunião de Manutenção Corporativa")
 
     ontem = (datetime.today() - timedelta(days=1)).date()
-    data_inicio = st.sidebar.date_input("Data Início", value=ontem, disabled=True)
-    data_fim = st.sidebar.date_input("Data Fim", value=ontem, disabled=True)
+    data_inicio = st.sidebar.date_input("Data Início", value=ontem)
+    data_fim = st.sidebar.date_input("Data Fim", value=ontem)
 
     gestores_default = ["José Marcos", "Alex de França Silva", "Wesley Duarte Assumpcao", "Renan Francisco Cunha"]
     status_default = ["Pago"]

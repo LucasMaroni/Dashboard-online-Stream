@@ -31,7 +31,7 @@ def get_default_options(available_options, default_list):
 
 # Carregar dados
 try:
-    df = load_data("M:\LUCAS\DashBord\Projeto-custo-diário-solicitações-de-depósitos.xlsx")
+    df = load_data("Projeto-custo-diário-solicitações-de-depósitos.xlsx")
 except Exception as e:
     st.error(f"Erro ao carregar o arquivo: {e}")
     st.stop()

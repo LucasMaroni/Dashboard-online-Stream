@@ -427,7 +427,6 @@ elif menu == "Reunião Manutenção Corporativa":
     else:
         col4.metric("🔝 Maior Solicitação", "Sem dados")
 
-
     st.markdown("### 📈 Custo por Finalidade no Período")
     df_final = df_rm.groupby('Finalidade')['Valor'].sum().reset_index()
 
@@ -437,7 +436,7 @@ elif menu == "Reunião Manutenção Corporativa":
         y='Valor',
         color='Finalidade',
         text=df_final['Valor'].apply(lambda x: f"R$ {x:,.2f}"),
-        labels={'Valor': 'R$'}
+        labels={'Valor': 'R$'}  
     )
 
     fig_final.update_traces(
